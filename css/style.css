@@ -1,4 +1,30 @@
-img.img-thumbnail {
-    width: 80%;
-    height: 80%;
-  }
+.pokemon-img {
+  width: 150px; /* Ancho fijo */
+  height: auto; /* Mantiene proporción */
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
+
+.pokemon-card {
+  position: relative;
+  text-align: center;
+}
+
+.pokemon-stats {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px; /* Tamaño de la tarjeta */
+  display: none; /* Oculto por defecto */
+  background: white; /* Fondo blanco */
+  padding: 10px; /* Espaciado interno */
+}
+
+.pokemon-stats h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
